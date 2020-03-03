@@ -15,7 +15,23 @@ public class Calculadora{
          b = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero"));
          resp = a + b;
          JOptionPane.showMessageDialog(null, a + "+ " + b + " = " + resp);
+      }else if(respUsuario.equals("-")){
+         a = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
+         b = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero"));
+         resp = a - b;
+         JOptionPane.showMessageDialog(null, a + "- " + b + " = " + resp);
+      } else if(respUsuario.equals("*")){
+         a = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
+         b = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero"));
+         resp = a * b;
+         JOptionPane.showMessageDialog(null, a + "* " + b + " = " + resp);
+      }else{
+         a = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
+         b = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero"));
+         resp = a / b;
+         JOptionPane.showMessageDialog(null, a + "/ " + b + " = " + resp);
       }
+      
       JOptionPane.showMessageDialog(null, "Adios :)");
       
    }
